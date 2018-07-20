@@ -1,6 +1,14 @@
+'''
+Author: Avinash
+Application: cows and bulls game
+'''
+
 import random
 game_counter=0
 computer_input=0
+
+#This function generates a four digit number without repetetion
+
 def generator():
     while(True):
         global computer_input
@@ -10,6 +18,7 @@ def generator():
             x=x+computer_input.count(computer_input[i])
         if(x==4):
             break
+
 generator()
 #print(computer_input)
 bull_count=0
@@ -49,7 +58,3 @@ while(True):
                 exit()    
         cow_count=0
         bull_count=0
-        
-    
-
-            
